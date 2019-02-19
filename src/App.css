@@ -1,33 +1,115 @@
+*{
+  box-sizing:border-box;
+  color:white;
+  font-family: Papyrus, fantasy;
+}
+html{
+background-color: black;
+}
 .App {
   text-align: center;
+  background-color: rgb(0, 0, 0);
+  height:100vh;
+  background-image: url("https://images.pexels.com/photos/1370545/pexels-photo-1370545.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size:contain 100vh;
+  background-repeat: no-repeat;
+  background-position: center
+}
+.title{
+  background-image:url();
+  width: 80%;
+  height:92px;
+  color: rgb(255, 255, 255);
+  margin: auto;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.song-header{
+  /* background-color:rgba(102, 102, 101, 0.644); */
+  color:rgba(30, 211, 202, 0.877);
+  font-size:1.3em;
+  width:50%;
+  margin:auto;
+  border-radius:10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.response{
+  background-color:rgba(102, 102, 101, 0.644);
+  color:white;
+  font-size:2em;
+  width:80%;
+  margin:auto;
+  border-radius:10px;
+  margin-top:10px;
+}
+
+/* .icon{
+  background-image: url(https://dtkp6g0samjql.cloudfront.net/uploads/photo/file/12583843/gallery_hero_il_fullxfull.1161451581_tez0.jpg);
+  width:200px;
+  height:94px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top:-45px;
+} */
+
+.input2{
+  height:55px;
+  width:50%;
+  background-color: rgba(102, 102, 101, 0.644);
+  color:white;
+  border:none;
+  border-radius:5px;
+  font-size:1.3em;
+  text-indent: 5px
+}
+
+#submit-btn{
+  color:black;
+  margin-top:20px;
+  height:120px;
+  width:120px;
+  border-radius:50%;
+  font-size: 1.3em;
+  background-color: rgba(30, 211, 202, 0.623);
+  border:none;
+}
+
+
+input {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  width: 300px;
+}
+
+.no-suggestions {
+  color: #999;
+  padding: 0.5rem;
+}
+
+.suggestions {
+  border: 1px solid #999;
+  border-top-width: 0;
+  list-style: none;
+  margin-top: 0;
+  margin:auto;
+  max-height: 200px;
+  overflow-y: auto;
+  padding-left: 0;
+  /* width: calc(300px + 1rem); */
+  width:50%;
+}
+
+.suggestions li {
+  padding: 0.5rem;
+}
+
+.suggestion-active,
+.suggestions li:hover {
+  background-color: rgba(30, 211, 202, 0.623);
   color: white;
+  cursor: pointer;
+  font-weight: 700;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.suggestions li:not(:last-of-type) {
+  border-bottom: 1px solid #999;
 }
